@@ -1,11 +1,11 @@
 import ReactDOM from 'react-dom/client';
-import {App, Hello} from './App'
+import {Info, Hello} from './Info'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
         <Hello name="wasim"/>
-        <App info="Welcome to the team"/>
+        <Info info="Welcome to the team"/>
     </>
 );
 
