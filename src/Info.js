@@ -1,4 +1,4 @@
-const App = (props) => (
+const Info = (props) => (
     <div>
       <p> Info: {props.info} </p>
     </div>
@@ -10,4 +10,4 @@ const Hello = (props) => {
       </div>
   )
 }
-export  {App, Hello};
+export  {Info, Hello};
