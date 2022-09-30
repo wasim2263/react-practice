@@ -4,9 +4,12 @@ const Info = (props) => (
     </div>
 )
 const Hello = (props) => {
+    const currentTime = ()=>{
+        return new Date().getFullYear();
+    }
   return (
       <div>
-        <p>Hello {props.name} </p>
+        <p>Hello {props.name} {currentTime()}</p>
       </div>
   )
 }
