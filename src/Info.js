@@ -42,7 +42,7 @@ const Notes = () =>{
     const [notes, setNotes] = useState([])
     const [newNote, setNewNote] = useState('')
     const [showAll, setShowAll] = useState(true)
-    useEffect(() => {
+    const hook = () => {
         console.log('effect')
         axios
             .get('http://localhost:3001/notes')
@@ -50,7 +50,8 @@ const Notes = () =>{
                 console.log('promise fulfilled')
                 setNotes(response.data)
             })
-    }, [])
+    }
+    useEffect(hook, [])
     console.log('render', notes.length, 'notes')
 
 }
