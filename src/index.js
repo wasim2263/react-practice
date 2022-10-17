@@ -6,6 +6,7 @@ root.render(
     <>
         <Hello name="wasim"/>
         <Info info="Welcome to the team"/>
+        <Notes/>
     </>
 );
 
